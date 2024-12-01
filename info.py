@@ -13,19 +13,19 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '24473292'))
+API_HASH = environ.get('API_HASH', 'ee26e216938e9af2b9d3d0e635e2fb6b')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+USERNAME = environ.get('USERNAME', "https://t.me/MovieAdmin0761_bot") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002316204986'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://deybarun176:55hq2pXSRRAruhH7@cluster0.mmeu9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #---------------------------------------------------------------
@@ -36,9 +36,9 @@ DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
 auth_channel = environ.get('AUTH_CHANNEL', '')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '0') # If anyone sends a request message to your bot, you will get it in this channel.
+request_channel = environ.get('REQUEST_CHANNEL', '8075098988') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/MovieAdmin0761_bot') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
